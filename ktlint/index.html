@@ -14,8 +14,15 @@
       
         <link rel="canonical" href="https://twitter.github.io/compose-rules/ktlint/">
       
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../detekt/">
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
     
     
       
@@ -23,19 +30,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2e8b5541.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.10ba22f1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#02a6f2">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -62,9 +67,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -84,7 +88,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Twitter Jetpack Compose Rules" class="md-header__button md-logo" aria-label="Twitter Jetpack Compose Rules" data-md-component="logo">
       
@@ -93,6 +99,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -112,9 +119,13 @@
       </div>
     </div>
     
+      
+    
+    
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -123,12 +134,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -140,7 +154,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -152,7 +166,7 @@
         <a href="https://github.com/twitter/compose-rules" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     Compose Rules
@@ -182,6 +196,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Twitter Jetpack Compose Rules" class="md-nav__button md-logo" aria-label="Twitter Jetpack Compose Rules" data-md-component="logo">
@@ -197,7 +212,7 @@
       <a href="https://github.com/twitter/compose-rules" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     Compose Rules
@@ -209,14 +224,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
@@ -224,26 +244,37 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Using with ktlint
+          
+  
+  <span class="md-ellipsis">
+    Using with ktlint
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Using with ktlint
+        
+  
+  <span class="md-ellipsis">
+    Using with ktlint
+  </span>
+  
+
       </a>
       
         
@@ -261,35 +292,96 @@
       
         <li class="md-nav__item">
   <a href="#using-with-kotlinter" class="md-nav__link">
-    Using with Kotlinter
+    <span class="md-ellipsis">
+      Using with Kotlinter
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-ktlint-gradle" class="md-nav__link">
-    Using with ktlint-gradle
+    <span class="md-ellipsis">
+      Using with ktlint-gradle
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-spotless" class="md-nav__link">
-    Using with spotless
+    <span class="md-ellipsis">
+      Using with spotless
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-ktlint-cli-or-the-ktlint-unofficial-intellij-plugin" class="md-nav__link">
-    Using with ktlint CLI or the ktlint (unofficial) IntelliJ plugin
+    <span class="md-ellipsis">
+      Using with ktlint CLI or the ktlint (unofficial) IntelliJ plugin
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuring-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#providing-custom-content-emitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Providing custom content emitters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#providing-a-list-of-allowed-compositionlocals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Providing a list of allowed CompositionLocals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-it-so-that-all-preview-composables-must-be-not-public-no-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make it so that all @Preview composables must be not public, no exceptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowing-matching-function-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allowing matching function names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#disabling-a-specific-rule" class="md-nav__link">
-    Disabling a specific rule
+    <span class="md-ellipsis">
+      Disabling a specific rule
+    </span>
   </a>
   
 </li>
@@ -304,14 +396,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../detekt/" class="md-nav__link">
-        Using with Detekt
+        
+  
+  <span class="md-ellipsis">
+    Using with Detekt
+  </span>
+  
+
       </a>
     </li>
   
@@ -319,14 +416,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../rules/" class="md-nav__link">
-        Ruleset
+        
+  
+  <span class="md-ellipsis">
+    Ruleset
+  </span>
+  
+
       </a>
     </li>
   
@@ -358,35 +460,96 @@
       
         <li class="md-nav__item">
   <a href="#using-with-kotlinter" class="md-nav__link">
-    Using with Kotlinter
+    <span class="md-ellipsis">
+      Using with Kotlinter
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-ktlint-gradle" class="md-nav__link">
-    Using with ktlint-gradle
+    <span class="md-ellipsis">
+      Using with ktlint-gradle
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-spotless" class="md-nav__link">
-    Using with spotless
+    <span class="md-ellipsis">
+      Using with spotless
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#using-with-ktlint-cli-or-the-ktlint-unofficial-intellij-plugin" class="md-nav__link">
-    Using with ktlint CLI or the ktlint (unofficial) IntelliJ plugin
+    <span class="md-ellipsis">
+      Using with ktlint CLI or the ktlint (unofficial) IntelliJ plugin
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#configuring-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#providing-custom-content-emitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Providing custom content emitters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#providing-a-list-of-allowed-compositionlocals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Providing a list of allowed CompositionLocals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-it-so-that-all-preview-composables-must-be-not-public-no-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make it so that all @Preview composables must be not public, no exceptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowing-matching-function-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allowing matching function names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#disabling-a-specific-rule" class="md-nav__link">
-    Disabling a specific rule
+    <span class="md-ellipsis">
+      Disabling a specific rule
+    </span>
   </a>
   
 </li>
@@ -405,30 +568,28 @@
                 
                   
 
-  <a href="https://github.com/twitter/compose-rules/tree/main/docs/ktlint.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
 
 
   <h1>Using with ktlint</h1>
 
 <h2 id="using-with-kotlinter">Using with Kotlinter<a class="headerlink" href="#using-with-kotlinter" title="Permanent link">&para;</a></h2>
 <p>If using <a href="https://github.com/jeremymailen/kotlinter-gradle">kotlinter</a>, you can specify the dependency on this set of rules <a href="https://github.com/jeremymailen/kotlinter-gradle#custom-rules">by using the <code>buildscript</code> classpath</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">buildscript</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">classpath</span><span class="w"> </span><span class="s2">&quot;com.twitter.compose.rules:ktlint:&lt;version&gt;&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="o">}</span><span class="w"></span>
-<span class="o">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">buildscript</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="n">classpath</span><span class="w"> </span><span class="s2">&quot;com.twitter.compose.rules:ktlint:&lt;version&gt;&quot;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
 </code></pre></div>
 <h2 id="using-with-ktlint-gradle">Using with ktlint-gradle<a class="headerlink" href="#using-with-ktlint-gradle" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>Warning</strong>: This plugin doesn't currently support ktlint versions over 0.46.0, <a href="https://github.com/JLLeitschuh/ktlint-gradle/pull/595">they are working to support it right now</a>.</p>
 </blockquote>
 <p>If using <a href="https://github.com/JLLeitschuh/ktlint-gradle">ktlint-gradle</a>, you can specify the dependency on this set of rules by using the <code>ktlintRuleset</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">ktlintRuleset</span><span class="w"> </span><span class="s2">&quot;com.twitter.compose.rules:ktlint:&lt;VERSION&gt;&quot;</span><span class="w"></span>
-<span class="o">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="n">ktlintRuleset</span><span class="w"> </span><span class="s2">&quot;com.twitter.compose.rules:ktlint:&lt;VERSION&gt;&quot;</span>
+<span class="o">}</span>
 </code></pre></div>
 <h2 id="using-with-spotless">Using with spotless<a class="headerlink" href="#using-with-spotless" title="Permanent link">&para;</a></h2>
 <blockquote>
@@ -437,16 +598,44 @@
 <h2 id="using-with-ktlint-cli-or-the-ktlint-unofficial-intellij-plugin">Using with ktlint CLI or the ktlint (unofficial) IntelliJ plugin<a class="headerlink" href="#using-with-ktlint-cli-or-the-ktlint-unofficial-intellij-plugin" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://github.com/twitter/compose-rules/releases">releases</a> page contains an <a href="https://stackoverflow.com/questions/11947037/what-is-an-uber-jar">uber jar</a> for each version release that can be used for these purposes.</p>
 <p>To use with <a href="https://ktlint.github.io/#getting-started">ktlint CLI</a>:
-<div class="highlight"><pre><span></span><code>ktlint -R ktlint-&lt;VERSION&gt;-all.jar
+<div class="highlight"><pre><span></span><code>ktlint<span class="w"> </span>-R<span class="w"> </span>ktlint-twitter-compose-&lt;VERSION&gt;-all.jar
 </code></pre></div></p>
 <p>You can use this same jar in the <a href="https://plugins.jetbrains.com/plugin/15057-ktlint-unofficial-">ktlint (unofficial) IntelliJ plugin</a> if the rules are compiled against the same ktlint version used for that release. You can configure the custom ruleset in the preferences page of the plugin.</p>
+<h2 id="configuring-rules">Configuring rules<a class="headerlink" href="#configuring-rules" title="Permanent link">&para;</a></h2>
+<h3 id="providing-custom-content-emitters">Providing custom content emitters<a class="headerlink" href="#providing-custom-content-emitters" title="Permanent link">&para;</a></h3>
+<p>There are some rules (<code>twitter-compose:content-emitter-returning-values-check</code> and <code>twitter-compose:multiple-emitters-check</code>) that use predefined list of known composables that emit content. But you can add your own too! In your <code>.editorconfig</code> file, you'll need to add a <code>content_emitters</code> property followed by a list of composable names separated by commas. You would typically want the composables that are part of your custom design system to be in this list.</p>
+<div class="highlight"><pre><span></span><code>[*.{kt,kts}]
+twitter_compose_content_emitters = MyComposable,MyOtherComposable
+</code></pre></div>
+<h3 id="providing-a-list-of-allowed-compositionlocals">Providing a list of allowed <code>CompositionLocal</code>s<a class="headerlink" href="#providing-a-list-of-allowed-compositionlocals" title="Permanent link">&para;</a></h3>
+<p>For <code>compositionlocal-allowlist</code> rule you can define a list of <code>CompositionLocal</code>s that are allowed in your codebase.</p>
+<div class="highlight"><pre><span></span><code>[*.{kt,kts}]
+twitter_compose_allowed_composition_locals = LocalSomething,LocalSomethingElse
+</code></pre></div>
+<h3 id="make-it-so-that-all-preview-composables-must-be-not-public-no-exceptions">Make it so that all @Preview composables must be not public, no exceptions<a class="headerlink" href="#make-it-so-that-all-preview-composables-must-be-not-public-no-exceptions" title="Permanent link">&para;</a></h3>
+<p>In <code>preview-public-check</code>, only previews with a <code>@PreviewParameter</code> are required to be non-public by default. However, if you want to make it so ALL <code>@Preview</code> composables are non-public, you can add this to your <code>.editorconfig</code> file:</p>
+<div class="highlight"><pre><span></span><code>[*.{kt,kts}]
+twitter_compose_preview_public_only_if_params = false
+</code></pre></div>
+<h3 id="allowing-matching-function-names">Allowing matching function names<a class="headerlink" href="#allowing-matching-function-names" title="Permanent link">&para;</a></h3>
+<p>The <code>twitter-compose:naming-check</code> rule requires all composables that return a value to be lowercased. If you want to allow certain patterns though, you can configure a comma-separated list of matching regexes in your <code>.editorconfig</code> file:</p>
+<div class="highlight"><pre><span></span><code>[*.{kt,kts}]
+twitter_compose_allowed_composable_function_names = .*Presenter,.*SomethingElse
+</code></pre></div>
 <h2 id="disabling-a-specific-rule">Disabling a specific rule<a class="headerlink" href="#disabling-a-specific-rule" title="Permanent link">&para;</a></h2>
 <p>To disable a rule you have to follow the <a href="https://github.com/pinterest/ktlint#how-do-i-suppress-an-errors-for-a-lineblockfile">instructions from the ktlint documentation</a>, and use the id of the rule you want to disable with the <code>twitter-compose</code> tag.</p>
 <p>For example, to disable <code>compose-naming-check</code>, the tag you'll need to disable is <code>twitter-compose:compose-naming-check</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cm">/* ktlint-disable twitter-compose:compose-naming-check */</span><span class="w"></span>
-<span class="w">    </span><span class="p">...</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="n">here</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* ktlint-enable twitter-compose:compose-naming-check */</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="cm">/* ktlint-disable twitter-compose:compose-naming-check */</span>
+<span class="w">    </span><span class="p">...</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="n">here</span>
+<span class="w">    </span><span class="cm">/* ktlint-enable twitter-compose:compose-naming-check */</span>
 </code></pre></div>
+
+
+
+
+
+
+
 
 
 
@@ -457,47 +646,12 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Overview
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../detekt/" class="md-footer__link md-footer__link--next" aria-label="Next: Using with Detekt" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Using with Detekt
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -520,10 +674,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d691e9de.min.js"></script>
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
       
     
   </body>
